@@ -25,8 +25,9 @@
             width: 90%;
         }
         .gif-box img {
-            width: 150px;
+            width: 160px;
             height: auto;
+            border-radius: 10px;
         }
         h1 {
             color: #ff3385;
@@ -69,7 +70,7 @@
 
     <div class="container">
         <div class="gif-box">
-            <img id="mainGif" src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3pjdW5oN24zbHpxOWwzZXA5aXFpM3h2bzhoN2w3eXZ5eWtwb21oMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/C0Asg9I511E9Wf3tWf/giphy.gif" alt="Cute Cat">
+            <img id="mainGif" src="https://media.tenor.com/289Z-mSg-3kAAAAi/tkthao219-bubu.gif" alt="Cute Cat">
         </div>
         <h1 id="question">Do you love me? 🥰</h1>
         <p class="desc" id="subtext">Aapka husband hamesha aapka hi rahega...</p>
@@ -82,12 +83,9 @@
 
     <script>
         const noBtn = document.getElementById('noBtn');
-        
-        // Phele hi button ko position de dete hain taki sahi se bhage
         noBtn.style.left = '150px';
 
         function flyAway() {
-            // Screen ke hisab se random jagah par button ko bhagayege
             const x = Math.random() * (window.innerWidth - noBtn.offsetWidth - 40);
             const y = Math.random() * (window.innerHeight - noBtn.offsetHeight - 40);
             
@@ -100,13 +98,12 @@
             document.getElementById('question').innerHTML = "I Knew It! I Love You Too! ❤️";
             document.getElementById('subtext').innerHTML = "Aapka husband hamesha aapko apni palkon par bitha kar rakhega. Chalo ab smile karo meri jaan! 👑";
             
-            // Cat jumping with hearts GIF
-            document.getElementById('mainGif').src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzh0NXc3ZW95ZmptYTFpOWRibnVvbjh4bWswYnpxdDZ4NXZ5cWRscSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y8pEAVgS8WdI5u0tAL/giphy.gif";
-            
-            // No button gayab kar do
+            // New Verified Happy Hearts Hug GIF
+            document.getElementById('mainGif').src = "https://media.tenor.com/gU_m8V6S7gIAAAAi/tkthao219-bubu.gif";
             noBtn.style.display = 'none';
         }
     </script>
 
 </body>
 </html>
+
